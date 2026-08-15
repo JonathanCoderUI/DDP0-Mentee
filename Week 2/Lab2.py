@@ -19,7 +19,7 @@ daftar_anggota = []
 banyak_anggota = int(input("Masukkan banyak anggota yang akan didaftarkan: "))
 
 # TODO: Meminta data untuk setiap anggota
-for nomor in range(..., ...):
+for nomor in range(1, banyak_anggota + 1):
     print(f"\n=== Data anggota {nomor} ===")
     # TODO: Mengambil input
     nama = input("Nama Anggota: ")
