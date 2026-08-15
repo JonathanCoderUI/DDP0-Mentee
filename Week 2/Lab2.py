@@ -35,7 +35,7 @@ for nomor in range(1, banyak_anggota + 1):
     else:
         wilayah = "Pesisir"
 
-    paket = tentukan_paket(...)
+    paket = tentukan_paket(skor_usaha)
 
     # Data anggota disimpan sebagai tuple dengan urutan:
     # Nama, Wilayah, Skor Usaha, Komoditas, Paket
