@@ -16,7 +16,7 @@ def tentukan_paket(skor_usaha):
 
 # TODO: Meminta banyak anggota yang akan didaftarkan
 daftar_anggota = []
-banyak_anggota = int(input("Masukkan banyak anggota yang akan didaftarkan: "))
+banyak_anggota = int(input("Masukkan banyak anggota: "))
 
 # TODO: Meminta data untuk setiap anggota
 for nomor in range(1, banyak_anggota + 1):
@@ -28,9 +28,9 @@ for nomor in range(1, banyak_anggota + 1):
     komoditas = input("Komoditas Unggulan: ")
 
     # TODO: Mengubah kode wilayah menjadi nama wilayah
-    if kode_wilayah == "G":
+    if kode_wilayah.upper() == "G":
         wilayah = "Pegunungan"
-    elif kode_wilayah == "L":
+    elif kode_wilayah.upper() == "L":
         wilayah = "Lembah"
     else:
         wilayah = "Pesisir"
