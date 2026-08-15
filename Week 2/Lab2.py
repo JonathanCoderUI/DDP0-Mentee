@@ -6,9 +6,9 @@ print("============================================================")
 
 def tentukan_paket(skor_usaha):
     # TODO: Menentukan paket berdasarkan skor usaha
-    if ...:
+    if skor_usaha <= 49:
         return "Paket Tunas"
-    elif ...:
+    elif skor_usaha <= 79:
         return "Paket Mekar"
     else:
         return "Paket Mandiri"
@@ -16,21 +16,21 @@ def tentukan_paket(skor_usaha):
 
 # TODO: Meminta banyak anggota yang akan didaftarkan
 daftar_anggota = []
-banyak_anggota = ...
+banyak_anggota = int(input("Masukkan banyak anggota yang akan didaftarkan: "))
 
 # TODO: Meminta data untuk setiap anggota
 for nomor in range(..., ...):
     print(f"\n=== Data anggota {nomor} ===")
     # TODO: Mengambil input
-    nama = ...
-    kode_wilayah = ...
-    skor_usaha = ...
-    komoditas = ...
+    nama = input("Nama Anggota: ")
+    kode_wilayah = input("Cabang KDMP (G/L/P): ")
+    skor_usaha = int(input("Skor Usaha: "))
+    komoditas = input("Komoditas Unggulan: ")
 
     # TODO: Mengubah kode wilayah menjadi nama wilayah
-    if ...:
+    if kode_wilayah == "G":
         wilayah = "Pegunungan"
-    elif ...:
+    elif kode_wilayah == "L":
         wilayah = "Lembah"
     else:
         wilayah = "Pesisir"
