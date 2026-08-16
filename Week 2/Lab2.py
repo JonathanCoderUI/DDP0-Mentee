@@ -39,8 +39,8 @@ for nomor in range(1, banyak_anggota + 1):
 
     # Data anggota disimpan sebagai tuple dengan urutan:
     # Nama, Wilayah, Skor Usaha, Komoditas, Paket
-    data_anggota = (..., ..., ..., ..., ...)
-    daftar_anggota.append(...)
+    data_anggota = (nama, wilayah, skor_usaha, komoditas, paket)
+    daftar_anggota.append(data_anggota)
 
 
 # TODO: Menampilkan data anggota dalam bentuk tabel
@@ -51,25 +51,25 @@ jumlah_mandiri = 0
 print("\n====================== DATA ANGGOTA KDMP ======================")
 print(f"{'No':<3} {'Nama':<12} {'Wilayah':<11} {'Skor':>4} {'Komoditas':<12} {'Paket':<14}")
 
-for i in range(...):
-    anggota = daftar_anggota[...]
-    nama, wilayah, skor_usaha, komoditas, paket = ...
+for i in range(len(daftar_anggota)):
+    anggota = daftar_anggota[i]
+    nama, wilayah, skor_usaha, komoditas, paket = anggota
 
-    print(f"{...:<3} {nama:<12} {...:<11} {skor_usaha:>4} {...:<12} {paket:<14}")
+    print(f"{i+1:<3} {nama:<12} {wilayah:<11} {skor_usaha:>4} {komoditas:<12} {paket:<14}")
 
     # TODO: Menghitung jumlah anggota pada setiap paket
-    if ...:
+    if paket == "Paket Tunas":
         jumlah_tunas += 1
-    elif ...:
+    elif paket == "Paket Mekar":
         jumlah_mekar += 1
     else:
         jumlah_mandiri += 1
 
 
 print("====================== RINGKASAN KDMP ======================")
-print(f"Jumlah penerima Paket Tunas: {...}")
-print(f"Jumlah penerima Paket Mekar: {...}")
-print(f"Jumlah penerima Paket Mandiri: {...}")
+print(f"Jumlah penerima Paket Tunas: {jumlah_tunas}")
+print(f"Jumlah penerima Paket Mekar: {jumlah_mekar}")
+print(f"Jumlah penerima Paket Mandiri: {jumlah_mandiri}")
 
 # BONUS: uncomment dan lengkapi jika mengerjakan bonus
 # def tampilkan_anggota_per_paket(daftar_anggota):
