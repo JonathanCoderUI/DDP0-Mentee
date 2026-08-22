@@ -57,7 +57,7 @@ def starburst_animation(x_target, y_target):
   """
   Menganimasikan proses meledaknya kembang api di langit
   """
-   panjang_percikan = random.randint(50, 150) # TODO: Memilih integer acak dalam interval [50, 150]
+  panjang_percikan = random.randint(50, 150) # TODO: Memilih integer acak dalam interval [50, 150]
   jumlah_percikan = random.randint(15, 30) # TODO: Memilih integer acak dalam interval [15, 30]
   warna = DAFTAR_WARNA[random.randint(0, 5)] # TODO: Mengambil warna dengan memilih indeks acak dalam interval [0, 5]
   sudut = 360/jumlah_percikan # TODO: Hitung sudut antar percikan (360 derajat dibagi jumlah percikan)
